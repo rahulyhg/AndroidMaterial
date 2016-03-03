@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.ptu.newfuture.SimpleFragment">
+
+    <ImageView
+        android:id="@+id/simplefragm_iv_name"
+        android:background="#000"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/simplefragm_tv_name"
+        android:textSize="100dp"
+        android:text="@string/action_settings"
+        android:background="#000"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+</FrameLayout>
