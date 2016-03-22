@@ -1,5 +1,6 @@
 package edu.ptu.dialog;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.dialog_title);
+        long last=System.currentTimeMillis();
         new CustomDialog.DialogBuilder(this)
                 .setHeader(new DialogHeaderAdapter() {
                     @Override
@@ -87,5 +89,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .build();
+        System.out.println(System.currentTimeMillis() - last);
+        last=System.currentTimeMillis();
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(LayoutInflater.from(MainActivity.this).inflate(R.layout.dialog_title, null));
+        dialog.setContentView(LayoutInflater.from(MainActivity.this).inflate(R.layout.dialog_foot_single, null));
+        dialog.setContentView(LayoutInflater.from(MainActivity.this).inflate(R.layout.dialog_title, null));
+        System.out.println(System.currentTimeMillis() - last);
     }
 }
