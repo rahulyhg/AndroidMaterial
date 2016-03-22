@@ -6,15 +6,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:id="@+id/dialog_title_tv"
+        android:text="hello"
+        android:textColor="#000" />
 
-    <ViewStub
+
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true" />
-    </ViewStub>
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_title_iv_close"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_delete" />
 
 </RelativeLayout>

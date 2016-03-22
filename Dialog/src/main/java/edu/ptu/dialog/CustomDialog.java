@@ -3,6 +3,8 @@ package edu.ptu.dialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
 
 
 /**
@@ -10,11 +12,11 @@ import android.view.LayoutInflater;
  */
 public class CustomDialog extends Dialog {
 
-    public CustomDialog(Context context) {
+    protected CustomDialog(Context context) {
         super(context);
     }
 
-    public CustomDialog(Context context, int themeResId) {
+    protected CustomDialog(Context context, int themeResId) {
         super(context, themeResId);
     }
 
@@ -24,19 +26,49 @@ public class CustomDialog extends Dialog {
 
     public static class DialogBuilder{
         private CustomDialog customDialog;
+        private final LinearLayout vg;
 
         public DialogBuilder(Context context) {
-            LayoutInflater.from(context).inflate(R.layout.dialog_templet,null);
+            vg = (LinearLayout)LayoutInflater.from(context).inflate(R.layout.dialog_templet, null);
             customDialog = new CustomDialog(context);
         }
-        public DialogBuilder setHeader(DialogTitle dialogTitle){
+        public DialogBuilder setHeader(DialogHeaderAdapter dialogTitle){
+            View view = dialogTitle.getView();
+            vg.addView(view);
+            if (!"".equals(dialogTitle.getTitle()))
+                dialogTitle.titleView(view).setText(dialogTitle.getTitle());
+            if (!dialogTitle.isShowClose())
+                return this;
+            dialogTitle.closeView(vg).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    customDialog.dismiss();
+                }
+            });
             return this;
         }
-        public DialogBuilder setContenter(){
+        public DialogBuilder setContenter(DialogContentAdapter dialogContent){
+            vg.addView(dialogContent.getView());
             return this;
         }
-        public DialogBuilder setFooter(CustomDialogFooter.CustomDialogFooterBuilder footerBuilder){
+        public DialogBuilder setFooter(final DialogFootAdapter footer){
+            vg.addView(footer.getView());
+            for (int i = 0; i < footer.getBeanSize(); i++) {
+                final int finalI = i;
+                footer.getBtnView(vg,i).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        View.OnClickListener onClickListener = footer.getBean(finalI).onClickListener;
+                        if (onClickListener !=null)
+                            onClickListener.onClick(v);
+                        customDialog.dismiss();
+                    }
+                });
+            }
             return this;
+        }
+        public CustomDialog build(){
+            return customDialog;
         }
     }
 }
