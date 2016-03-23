@@ -31,6 +31,7 @@ public class CustomDialog extends Dialog {
         public DialogBuilder(Context context) {
             vg = (LinearLayout)LayoutInflater.from(context).inflate(R.layout.dialog_templet, null);
             customDialog = new CustomDialog(context);
+            customDialog.setContentView(vg);
         }
         public DialogBuilder setHeader(DialogHeaderAdapter dialogTitle){
             View view = dialogTitle.getView();
@@ -39,7 +40,9 @@ public class CustomDialog extends Dialog {
                 dialogTitle.titleView(view).setText(dialogTitle.getTitle());
             if (!dialogTitle.isShowClose())
                 return this;
-            dialogTitle.closeView(vg).setOnClickListener(new View.OnClickListener() {
+            View closeView = dialogTitle.closeView(vg);
+            closeView.setVisibility(View.VISIBLE);
+            closeView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     customDialog.dismiss();
@@ -52,7 +55,8 @@ public class CustomDialog extends Dialog {
             return this;
         }
         public DialogBuilder setFooter(final DialogFootAdapter footer){
-            vg.addView(footer.getView());
+            View view = footer.getView();
+            vg.addView(view);
             for (int i = 0; i < footer.getBeanSize(); i++) {
                 final int finalI = i;
                 footer.getBtnView(vg,i).setOnClickListener(new View.OnClickListener() {
