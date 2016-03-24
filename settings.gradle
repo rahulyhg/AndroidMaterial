@@ -1,1 +1,1 @@
-include ':RecycleView', ':Glide','Dialog'
+include ':RecycleView', ':Glide', ':WebView','Dialog'
