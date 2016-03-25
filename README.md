@@ -24,3 +24,6 @@ RecyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 - ViewOffsetBehavior 
 ```java
 ```
+
+##Dialog
+[Dialog link](./Dialog/Dialog.md)
