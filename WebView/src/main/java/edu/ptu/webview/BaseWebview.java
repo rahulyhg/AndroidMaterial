@@ -5,11 +5,13 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
 import android.util.AttributeSet;
-import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import edu.ptu.webview.js.JsInterfaceUseAndroid;
+import edu.ptu.webview.js.JsObjectName;
 
 /**
  * Created by WangAnshu on 2016/3/24.
@@ -48,13 +50,7 @@ public class BaseWebview extends WebView {
             }
         });
 //        2. 通过java代码调用javascript
-        this.addJavascriptInterface(new Object() {
-            @JavascriptInterface
-            public void clickOnAndroid(){
-                // TODO: 2016/3/24 js调用android代码
-            }
-
-        }, "android");
+        this.addJavascriptInterface(new JsInterfaceUseAndroid(), ((JsObjectName)JsInterfaceUseAndroid.class.getAnnotations()[0]).name());
 //        4. 打开页面时， 自适应屏幕：
         WebSettings webSettings =   getSettings();
         webSettings.setUseWideViewPort(true);//设置此属性，可任意比例缩放
