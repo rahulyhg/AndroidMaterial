@@ -5,10 +5,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import edu.ptu.dialog.custom.CustomDialog;
+import edu.ptu.dialog.custom.DialogFootAdapter;
+import edu.ptu.dialog.custom.impl.SimpleContentAdapter;
+import edu.ptu.dialog.custom.impl.SimpleFooterAdapter;
+import edu.ptu.dialog.custom.impl.SimpleHeaderAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,83 +47,9 @@ public class MainActivity extends AppCompatActivity {
     private void createCustomDialog() {
         long last= System.currentTimeMillis();
         dialog = new CustomDialog.DialogBuilder(this)
-                .setHeader(new DialogHeaderAdapter() {
-                    @Override
-                    public View getView() {
-                        return LayoutInflater.from(MainActivity.this).inflate(R.layout.dialog_title, null);
-                    }
-
-                    @Override
-                    public String getTitle() {
-                        return "功能简介";
-                    }
-
-                    @Override
-                    public boolean isShowClose() {
-                        return false;
-                    }
-
-                    @Override
-                    public TextView titleView(View vg) {
-                        return (TextView) vg.findViewById(R.id.dialog_title_tv);
-                    }
-
-                    @Override
-                    public View closeView(View vg) {
-                        return vg.findViewById(R.id.dialog_title_iv_close);
-                    }
-                })
-                .setContenter(new DialogContentAdapter() {
-
-                    private View vg;
-
-                    @Override
-                    public View getView() {
-                        vg = getLayoutInflater().inflate(R.layout.dialog_content, null);
-                        return vg;
-                    }
-
-                    @Override
-                    public void setContent() {
-                        TextView contentView = (TextView) getContentView((ViewGroup) vg);
-                        contentView.setText("新功能，一切至简，易用");
-                    }
-
-                    @Override
-                    public View getContentView(ViewGroup viewGroup) {
-                        return viewGroup;
-                    }
-                })
-                .setFooter(new DialogFootAdapter() {
-                    ArrayList<BtnBean> btns = new ArrayList<BtnBean>(2) {{
-                        BtnBean object = new BtnBean();
-                        add(object);
-                    }};
-
-                    @Override
-                    public View getView() {
-                        return getLayoutInflater().inflate(R.layout.dialog_foot_single, null);
-                    }
-
-                    @Override
-                    public View getBtnView(ViewGroup vg, int index) {
-                        if (index == 0) {
-                            return vg.findViewById(R.id.dialog_footer_tv_cancel);
-                        }
-                        return vg.getChildAt(index);
-                    }
-
-                    @Override
-                    public BtnBean getBean(int index) {
-
-                        return btns.get(index);
-                    }
-
-                    @Override
-                    public int getBeanSize() {
-                        return btns.size();
-                    }
-                })
+                .setHeader(this,new SimpleHeaderAdapter("标题",true))
+                .setContenter(this,new SimpleContentAdapter("内容"))
+                .setFooter(this,new SimpleFooterAdapter("知道了"))
                 .build();
         System.out.println(System.currentTimeMillis() - last);
     }

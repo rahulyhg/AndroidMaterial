@@ -14,4 +14,4 @@
 ##不存在内存泄露
 
 ##改进措施
-edu.ptu.dialog.DialogHeaderAdapter 做个简单的实现，如SimpleHeaderAdapter，可以传入简单的数据，标题，是否显示关闭对话框
+edu.ptu.dialog.custom.DialogHeaderAdapter 做个简单的实现，如SimpleHeaderAdapter，可以传入简单的数据，标题，是否显示关闭对话框

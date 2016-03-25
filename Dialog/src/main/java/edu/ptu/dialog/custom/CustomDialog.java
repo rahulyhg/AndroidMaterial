@@ -1,10 +1,12 @@
-package edu.ptu.dialog;
+package edu.ptu.dialog.custom;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import edu.ptu.dialog.R;
 
 
 /**
@@ -33,8 +35,8 @@ public class CustomDialog extends Dialog {
             customDialog = new CustomDialog(context);
             customDialog.setContentView(vg);
         }
-        public DialogBuilder setHeader(DialogHeaderAdapter dialogTitle){
-            View view = dialogTitle.getView();
+        public DialogBuilder setHeader(Context context,DialogHeaderAdapter dialogTitle){
+            View view = dialogTitle.getView(context);
             vg.addView(view);
             if (!"".equals(dialogTitle.getTitle()))
                 dialogTitle.titleView(view).setText(dialogTitle.getTitle());
@@ -50,12 +52,12 @@ public class CustomDialog extends Dialog {
             });
             return this;
         }
-        public DialogBuilder setContenter(DialogContentAdapter dialogContent){
-            vg.addView(dialogContent.getView());
+        public DialogBuilder setContenter(Context context,DialogContentAdapter dialogContent){
+            vg.addView(dialogContent.getView(context));
             return this;
         }
-        public DialogBuilder setFooter(final DialogFootAdapter footer){
-            View view = footer.getView();
+        public DialogBuilder setFooter(Context context,final DialogFootAdapter footer){
+            View view = footer.getView(context);
             vg.addView(view);
             for (int i = 0; i < footer.getBeanSize(); i++) {
                 final int finalI = i;
