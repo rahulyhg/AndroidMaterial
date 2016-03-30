@@ -8,19 +8,24 @@ import android.widget.LinearLayout;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.ptu.webview.business.RequestBean;
 import edu.ptu.webview.title.CustomTitle;
 import edu.ptu.webview.title.CustomTitleAdapter;
 
 /**
  * Created by WangAnshu on 2016/3/24.
  */
-public class WebViewActivity extends AppCompatActivity{
+public class WebViewActivity extends AppCompatActivity {
 
     private BaseWebview wvDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        try {
+            RequestBean requestBean = (RequestBean) getIntent().getSerializableExtra("requestBean");
+        } catch (Exception e) {
+        }
         initView();
     }
 
@@ -41,7 +46,8 @@ public class WebViewActivity extends AppCompatActivity{
         linearLayout.addView(wvDisplay);
 
     }
-//    3. 按返回键时， 不退出程序而是返回上一浏览页面：
+
+    //    3. 按返回键时， 不退出程序而是返回上一浏览页面：
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if ((keyCode == KeyEvent.KEYCODE_BACK) && wvDisplay.canGoBack()) {
             wvDisplay.goBack();

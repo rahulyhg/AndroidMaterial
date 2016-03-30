@@ -9,11 +9,6 @@ import android.webkit.JavascriptInterface;
 public class JsInterfaceUseAndroid {
     @JavascriptInterface
     public void clickOnAndroid(){
-        // TODO: 2016/3/24 js调用android代码
-    }
-
-    public static void main(String[] args) {
-        String name = ((JsObjectName) JsInterfaceUseAndroid.class.getAnnotations()[0]).name();
-        System.out.println("===>"+name);
+        // TODO: 2016/3/24 js调用android代码,可能会出现不同网页调用这个方法，且处理的逻辑不一样。这个方法将会变复杂
     }
 }

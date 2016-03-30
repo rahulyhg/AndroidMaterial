@@ -1,6 +1,5 @@
 package edu.ptu.webview;
 
-import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
@@ -38,7 +37,7 @@ public class BaseWebview extends WebView {
         super(context, attrs, defStyleAttr, privateBrowsing);
     }
 
-    @SuppressLint("JavascriptInterface")
+
     public void initConfig() {
 
 //        1. 打开网页时不调用系统浏览器， 而是在本WebView中显示：
