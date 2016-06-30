@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 足彩 -->
+    <color name="betjc_orange_text">#ff6b2c</color>
+    <color name="betjc_dialog_gray_bg">#f5f5f5</color>
+    <color name="betjc_jczq_duizhen_bg">#f7faf5</color>
+    <color name="betjc_jczq_duizhen_child_bg">#e8ecea</color>
+    <color name="betjc_jczq_duizhen_sp_bg">#e0e0df</color>
+    <color name="betjc_jczq_duizhen_sp_text">#737873</color>
+    <color name="betjc_jczq_duizhen_text_green">#78c600</color>
+    <!-- 热门、非热门赛事球队名称颜色 -->
+    <color name="betjc_jczq_normal_match_team_txt">#ff282828</color>
+    <color name="betjc_jczq_hot_match_team_txt">#ffe60e0e</color>
+    <!-- 表格上的灰线 -->
+    <color name="betjc_table_gray">#e0e0e0</color>
+    <!-- 所有界面背景色 -->
+    <color name="betjc_n_txtblack">#252525</color>
+
+    <!-- 透明 -->
+    <color name="betjc_touming">#00000000</color>
+    <color name="betjc_bantouming1">#33000000</color>
+    <color name="betjc_bantouming2">#aa000000</color>
+    <color name="betjc_bantouming3">#88000000</color>
+    <color name="betjc_bantouming4">#15000000</color>
+    <color name="betjc_bggray">#ededed</color>
+    <color name="betjc_white_bantouming">#80ffffff</color>
+    <!-- 北单对阵分割线 -->
+    <color name="betjc_green">#86c000</color>
+    <!-- 黑色 -->
+    <color name="betjc_black">#000000</color>
+    <!-- 白色 -->
+    <color name="betjc_white">#ffffff</color>
+    <!-- 输入框背景色 -->
+    <color name="betjc_e_popbtn">#F8F8F8</color>
+    <!-- 灰色字体 -->
+    <color name="betjc_n_txtred">#f62857</color>
+    <color name="betjc_sy_gray2">#696969</color>
+    <color name="betjc_weibohui">#999999</color>
+    <!-- 红色字体 -->
+    <color name="betjc_n_txtblue">#2ebbd7</color>
+    <!-- 竞猜篮球 -->
+    <color name="betjc_jclq_line1">#d8d8d8</color>
+    <!-- 第一条线 -->
+    <color name="betjc_jclq_line2">#e5e5e5</color>
+    <!-- 第二条线 -->
+    <color name="betjc_jclq_text_tz">#666666</color>
+    <!-- 主胜和主负的颜色 -->
+    <color name="betjc_jclq_text_ouzhi">#6c6c6c</color>
+    <!-- 主胜和主负的颜色 -->
+    <color name="betjc_jclq_text_sp">#969696</color>
+    <!-- 主胜和主负的颜色 -->
+    <color name="betjc_jclq_choosed">#ff6b2c</color>
+    <!-- 主胜和主负的颜色 -->
+    <color name="betjc_jclq_rf">#007aff</color>
+    <!-- 主胜和主负的颜色 -->
+    <color name="betjc_jclq_league_bg">#ffcc00</color>
+    <!-- 足彩标题栏 -->
+    <color name="betjc_zc_title">#51b700</color>
+    <!-- 标题栏绿色 -->
+    <color name="betjc_zc_title_line">#459a01</color>
+    <!-- Tab Bar 字灰色 -->
+    <color name="betjc_tab_bar_text_gray">#797979</color>
+    <!-- tab栏 -->
+    <color name="betjc_tab_bg">#ebebeb</color>
+    <!-- 自定义选项栏 -->
+    <color name="betjc_tb_text">#777777</color>
+    <color name="betjc_tb_white">#ffffff</color>
+    <color name="betjc_tb_bg_down">#ffaf38</color>
+    <color name="betjc_jxnumbg">#ededed</color>
+    <!-- 蓝色 -->
+    <color name="betjc_lchtbuleitem">#55b9f2</color>
+    <color name="betjc_jclq_click_bg">#ffa100</color>
+    <!-- 混投&全场比分 -->
+    <color name="betjc_mix_type_txt">#FFA300</color>
+    <color name="betjc_mix_scrollview_bg">#F4F4F4</color>
+    <color name="betjc_mix_type_bg">#F4F4F4</color>
+    <color name="betjc_mix_item_txt">#515151</color>
+    <color name="betjc_mix_item_sp">#6C6C6C</color>
+
+    <!-- 竞足让球背景 -->
+    <color name="betjc_rq_bg_red">#fe5114</color>
+    <color name="betjc_rq_bg_gray">#adb0a5</color>
+    <color name="betjc_rq_bg_green">#08a122</color>
+</resources>

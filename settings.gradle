@@ -1,1 +1,2 @@
-include ':RecycleView', ':Glide', ':WebView','Dialog'
+include ':RecycleView', ':Glide', ':WebView',':Dialog', ':Flexboxlayout', ':Constraintlayout','lib_flexbox'
+project(':lib_flexbox').projectDir=new File('lib/flexbox')

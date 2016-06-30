@@ -1,0 +1,232 @@
+<resources>
+    <style name="betjc_fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="betjc_fill_warp">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="betjc_jctxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/betjc_n_txtblack</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 通用样式 -->
+    <style name="betjc_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="betjc_jc_bet_itemtxt">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/betjc_n_txtblack</item>
+        <item name="android:textSize">@dimen/betjc_titleTxtSize</item>
+    </style>
+    <style name="betjc_jcitembtn">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/betjc_jczq_duizhen_text_green</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="betjc_zcbl_item">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/betjc_n_txtblack</item>
+    </style>
+    <style name="betjc_zjq_itembtn_front">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/betjc_jczq_duizhen_text_green</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="betjc_jjc_zjq_itembtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/betjc_jclq_text_tz</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="betjc_jcitemtxt_xiao">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/betjc_n_txtblack</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="betjc_commonframeline05">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="betjc_jc_lchhtz_itembtnBf1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    <style name="betjc_jc_lchhtz_itembtnBf">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    <style name="betjc_jc_ht_itembtnBf">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/betjc_black</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+    <style name="betjc_jcitembtnBf3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/betjc_jclq_text_sp</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+    <style name="betjc_lc_ht_itembtnBf">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/betjc_jclq_text_tz</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+    <style name="betjc_jc_lcsfc_itembtnBf1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    <style name="betjc_jc_lcsfc_itembtnBf">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    <!-- 各种颜色的字条样式 -->
+    <style name="betjc_txt_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/betjc_n_txtblack</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="betjc_txt_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/betjc_white</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="betjc_txt_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/betjc_weibohui</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="betjc_txt_red">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/betjc_n_txtred</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="betjc_txt_blue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/betjc_n_txtblue</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <!-- 足彩混合投注的弹窗 -->
+    <style name="betjc_tv_zc_mix_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/betjc_mix_item_txt</item>
+    </style>
+    <style name="betjc_tv_zc_mix_sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/betjc_mix_item_sp</item>
+    </style>
+    <style
+        name="betjc_Theme_Translucent_NoTitleBar"
+        parent="@android:style/Theme.Translucent.NoTitleBar"></style>
+    <!-- 足彩混合投注的弹窗 End -->
+    <!-- 合买模块使用 -->
+    <!-- 宽度，高度都是 match_parent -->
+
+    <!-- 通用提示对话框样式 -->
+    <style
+        name="bethm_custom_dialog"
+        parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 设置背景为空等于去掉了边框 -->
+        <item name="android:windowBackground">@null</item>
+        <!-- 设置背景是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="bethm_txt_common">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+
+    <style
+        name="TrendDialogStyleBottom"
+        parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+    </style>
+
+</resources>

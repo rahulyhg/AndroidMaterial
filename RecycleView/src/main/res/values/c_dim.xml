@@ -1,0 +1,11 @@
+<resources>
+
+
+    <dimen name="betjc_duizhenSize">15.5dp</dimen>
+    <!-- 大字体(标题) -->
+    <dimen name="betjc_bigTxtSize">22dp</dimen>
+    <dimen name="betjc_titleTxtSize">17dp</dimen>
+
+    <dimen name="betjc_zc_zjq_betitem">35dp</dimen>
+    <dimen name="betjc_bd_sxds_betitem">45dp</dimen>
+</resources>
