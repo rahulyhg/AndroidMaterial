@@ -22,7 +22,7 @@ RecyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 ![Behavior](doc/img/Behavior.png)
 - CoordinatorLayout.Behavior为抽象类，只定义一系列方法。
 - ViewOffsetBehavior 
-```java
+```java 
 ```
 
 ##Dialog
