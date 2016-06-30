@@ -7,5 +7,21 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="item_bet">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#cc77ab</item>
+        <item name="android:layout_marginRight">1px</item>
+        <item name="android:layout_marginBottom">1px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="item_bet_label">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">#766634</item>
+        <item name="android:layout_marginRight">1px</item>
+        <item name="android:layout_marginBottom">1px</item>
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 </resources>
