@@ -1,3 +1,6 @@
+#Deprecated
+[新的项目地址](https://github.com/rickgit/AndroidWidget)
+
 # AndroidMaterial
 use meterial design
 ##RecyclerView
